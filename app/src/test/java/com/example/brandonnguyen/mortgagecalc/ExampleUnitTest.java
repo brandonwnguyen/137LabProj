@@ -1,4 +1,4 @@
-package wuproject.morgagecalculator;
+package com.example.brandonnguyen.mortgagecalc;
 
 import org.junit.Test;
 
