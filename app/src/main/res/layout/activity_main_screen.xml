@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wuproject.morgagecalculator.MainScreen">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Home Value"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/editText2"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="106dp"
+        android:layout_height="33dp"
+        android:text="Down Payment"
+        tools:layout_editor_absoluteY="69dp"
+        app:layout_constraintRight_toLeftOf="@+id/editText3"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="106dp"
+        android:layout_height="34dp"
+        android:text="Interest Rate"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintRight_toLeftOf="@+id/editText4"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="108dp"
+        android:layout_height="31dp"
+        android:text="Terms"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="108dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="29dp"
+        android:text="Property Tax Rate"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow9"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="501dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TableRow
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        android:id="@+id/tableRow5"
+        app:layout_constraintRight_toLeftOf="@+id/tableRow6"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        android:id="@+id/tableRow4"
+        app:layout_constraintRight_toLeftOf="@+id/tableRow5"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        app:layout_constraintRight_toLeftOf="@+id/tableRow7"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        tools:layout_editor_absoluteX="312dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="45dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintLeft_toRightOf="@+id/Calculate"
+        android:layout_marginLeft="68dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="231dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="230dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="138dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="229dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="137dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="229dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintLeft_toRightOf="@+id/textView11"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="109dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/tableRow4"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+</android.support.constraint.ConstraintLayout>
