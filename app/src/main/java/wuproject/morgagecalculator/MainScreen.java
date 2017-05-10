@@ -24,7 +24,7 @@ public class MainScreen extends AppCompatActivity {
     private int MorgageLoanLength;
     private int PropertyTaxes;
     //Accepts User Input
-    private EditText homeInput; //user input for Home Payment
+    private EditText HomeInput; //user input for Home Payment
     private EditText DownInput; //user input for Down Payment
     private EditText InterestInput;
     private EditText PropertyInput; // custom rate
@@ -57,7 +57,7 @@ public class MainScreen extends AppCompatActivity {
 
         }
 
-        homeInput = (EditText)findViewById(R.id.homeInput);
+        HomeInput = (EditText)findViewById(R.id.HomeInput);
         DownInput = (EditText)findViewById(R.id.DownInput);
         InterestInput = (EditText)findViewById(R.id.InterestInput);
         PropertyInput = (EditText)findViewById(R.id.PropertyInput);
@@ -77,7 +77,7 @@ public class MainScreen extends AppCompatActivity {
         public void onClick(View v) {
             ((InputMethodManager) getSystemService(
                     Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(
-                    homeInput.getWindowToken(), 0);
+                    HomeInput.getWindowToken(), 0);
 
             calculate();
         }
@@ -88,7 +88,7 @@ public class MainScreen extends AppCompatActivity {
         double monthlyIntRate = 0.0, loanAmount = 0.0, monthlyPayment = 0.0, totalPayment = 0.0;
         int months = 0;
 
-        HomeValue = Double.parseDouble(homeInput.getText().toString());
+        HomeValue = Double.parseDouble(HomeInput.getText().toString());
         DownPayment = Double.parseDouble(DownInput.getText().toString());
         InterestRate = Double.parseDouble(InterestInput.getText().toString());
         PropertyTaxes = Integer.parseInt(PropertyInput.getText().toString());
@@ -115,7 +115,7 @@ public class MainScreen extends AppCompatActivity {
             // hide the soft keyboard
             ((InputMethodManager) getSystemService(
                     Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(
-                    homeInput.getWindowToken(), 0);
+                    HomeInput.getWindowToken(), 0);
 
             Reset();
         }
@@ -123,7 +123,7 @@ public class MainScreen extends AppCompatActivity {
     private void Reset(){
 
         //reset every field
-        homeInput.setText(String.format("0.0"));// Is this right??
+        HomeInput.setText(String.format("0.0"));// Is this right??
         DownInput.setText("0.0");
         InterestInput.setText("0.0");
         PropertyInput.setText("0");
